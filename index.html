@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <title>Profile</title>
     <link rel="stylesheet" href="style.css"></link>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header class="header_area">
         <div class="header_content" id="header">
-            <button class="header_navigation_button" type="button">I'M GEONAE</button>
+            <button class="header_navigation_button" id="title_btn" type="button">I'M GEONAE</button>
             <nav class="header_navigation_menus">
-                <button class="header_navigation_button" type="button">About me</button>
-                <button class="header_navigation_button" type="button">Skills</button>
-                <button class="header_navigation_button" type="button">Projects</button>
+                <button data-target=".about_area" class="header_navigation_button" type="button">About me</button>
+                <button data-target=".skills_area" class="header_navigation_button" type="button">Skills</button>
+                <button data-target=".projects_area" class="header_navigation_button" type="button">Projects</button>
             </nav>
         </div>
     </header>
     <section class="intro_area">
         <div class="intro_content">
-            <p id="intro_title" style="font-size: 50px;">Hello World!</p>
-            <p id="intro_introduce" style="font-size: 20px; text-align: center; line-height: 30px;">
+            <h1 id="intro_title" style="font-size: 50px; font-weight: bolder;">Hello World!</h1>
+            <p id="intro_introduce" style="font-size: 22px; text-align: center; line-height: 50px;">
                 끈기와 열정이 무기인 MZ 풀스택 개발자<br>
                 임건애입니다.
             </p>
@@ -29,16 +30,28 @@
         <div class="section_content">
             <div class="section_title">ABOUT ME</div>
             <div class="about_img_detail">
-                <img id="about_img" src="./image/jokebear.jpg">
-                <div id="about_detail">
-                    <p>임건애</p>
-                    <p>wo-oaw@naver.com</p>
-                    <p>동덕여자대학교 (컴퓨터학과)</p>
-                    <div class="about_icons">
-                        <a href="https://github.com/wo-oaw"><img src="./image/github.png" class="icons"></a>
-                        <a href="https://blog.naver.com/wo-oaw"><img src="./image/blogger.png" class="icons"></a>
+                <div class="about_box">
+                    <img id="about_img" src="./image/jokebear.jpg">
+                    <div id="about_detail">
+                        <div class="about_info_row">
+                            <img src="/image/user.png" class="info_icons">
+                            <span>임건애</span>
+                        </div>
+                        <div class="about_info_row">
+                            <img src="image/email.png" class="info_icons">
+                            <span>wo-oaw@naver.com</span>
+                        </div>
+                        <div class="about_info_row">
+                            <img src="image/graduate.png" class="info_icons">
+                            <span>동덕여자대학교 (컴퓨터학과)</span>
+                        </div>
+                        <div class="about_icons">
+                            <a href="https://github.com/wo-oaw"><img src="./image/github.png" class="link_icons"></a>
+                            <a href="https://blog.naver.com/wo-oaw"><img src="./image/blogger.png" class="link_icons"></a>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -85,31 +98,74 @@
         <div class="section_content">
             <div class="section_title">PROJECTS</div>
             <div class="projects_slider">
-                <div class="project-card">
+                <div class="project_card">
                     <h3>Project Name 1</h3>
                     <p>Period: 2024.01 ~ 2024.03</p>
                     <p>Tech: HTML, CSS, JS</p>
-                    <div class="button-group">
-                        <a href="#" class="view-btn">View</a>
-                        <a href="#" class="source-btn">Source</a>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project_card">
                     <h3>Project Name 2</h3>
                     <p>Period: 2024.01 ~ 2024.03</p>
                     <p>Tech: HTML, CSS, JS</p>
-                    <div class="button-group">
-                        <a href="#" class="view-btn">View</a>
-                        <a href="#" class="source-btn">Source</a>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project_card">
                     <h3>Project Name 3</h3>
                     <p>Period: 2024.01 ~ 2024.03</p>
                     <p>Tech: HTML, CSS, JS</p>
-                    <div class="button-group">
-                        <a href="#" class="view-btn">View</a>
-                        <a href="#" class="source-btn">Source</a>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <h3>Project Name 4</h3>
+                    <p>Period: 2024.01 ~ 2024.03</p>
+                    <p>Tech: HTML, CSS, JS</p>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <h3>Project Name 5</h3>
+                    <p>Period: 2024.01 ~ 2024.03</p>
+                    <p>Tech: HTML, CSS, JS</p>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <h3>Project Name 6</h3>
+                    <p>Period: 2024.01 ~ 2024.03</p>
+                    <p>Tech: HTML, CSS, JS</p>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <h3>Project Name 7</h3>
+                    <p>Period: 2024.01 ~ 2024.03</p>
+                    <p>Tech: HTML, CSS, JS</p>
+                    <img src="image/260x130.png">
+                    <div class="project_btn_group">
+                        <a href="#" class="view_btn">View</a>
+                        <a href="#" class="source_btn">Source</a>
                     </div>
                 </div>
 
