@@ -25,9 +25,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 80%;
+    /* height: 80%; */
     gap: 60px;
+    overflow-x: auto;
 }
 
 .section_title {
@@ -109,14 +111,14 @@ section {
 .about_area {
     display: flex;
     align-items: center;
-    height: 700px;
+    height: 650px;
 }
 
 .about_img_detail {
     display: flex;
     align-items: center;
     width: 55%;
-    height: 300px;
+    height: 350px;
     border-radius: 20px;
 
     background-color: rgb(228, 239, 247);
@@ -176,33 +178,39 @@ section {
     background-color: rgb(206, 225, 240);
 }
 
+.skills_set_outer {
+    height: 400px;
+    width: 80%;
+}
+
 .skills_set_box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 50px 80px;
     height: 300px;
-    width: 65%;
     border-radius: 20px;
     background-color: rgb(255, 250, 247);
 }
 
-.skills_set {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
 .skills_item {
-    display: flex;
-    flex-direction: row;
-
+    display: flex; /* ✅ 수평 배치 */
+    align-items: flex-start; /* 세로 정렬 기준 상단으로 */
     align-items: center;
-    gap: 10px;
+    /* margin-bottom: 30px; */
 }
 
 .skills_category {
-    width: 100px;
+    width: 120px; /* ✅ 왼쪽 카테고리 고정 너비 */
+    font-weight: bold;
+    font-size: 18px;
+    flex-shrink: 0; /* ✅ 너비 줄어들지 않게 */
+}
+
+.skills_set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .skills_name {
@@ -223,9 +231,12 @@ section {
 
 .projects_slider {
     display: flex;
+    /* justify-content: center; */
     gap: 20px;
     transition: transform 0.5s ease;
     width: 100%;
+    /* padding: 20px; */
+    padding-bottom: 40px;
 
     overflow-x: scroll; /* 스크롤 이벤트에 필요 */
     scroll-behavior: smooth;
@@ -233,6 +244,12 @@ section {
     user-select: none;
     cursor: grab;
 }
+
+/* 스크롤바 안 보이게
+.projects_slider::-webkit-scrollbar {
+    display: none;
+}
+*/
 
 .project_card {
     min-width: 260px;
@@ -276,4 +293,5 @@ section {
 .footer_area {
     width: 100%;
     height: 80px;
+    background-color: rgb(81, 106, 125);
 }
