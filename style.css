@@ -80,7 +80,7 @@ section {
     display: flex;
     align-items: center;
     height: 550px;
-    background-image: url("/image/IMG_0438.jpeg");
+    background-image: url("./image/IMG_0438.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
 
