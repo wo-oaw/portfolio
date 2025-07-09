@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Cafe24Simplehae";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Simplehae.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "Cafe24Simplehae";
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    gap: 60px;
+}
+
+.section_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 80px;
+}
+
+/* header */
+
+.header_area {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgb(197, 197, 197);
+}
+
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header_navigation_menus {
+    display: flex;
+    gap: 20px;
+}
+
+.header_navigation_button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+/* intro */
+
+.intro_area {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.intro_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* about me */
+
+.about_area {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.about_img_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*
+    gap: 50px;
+    */
+    padding: 70px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#about_img {
+    width: 45%;
+}
+#about_detail {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.about_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
+}
+
+/* skills */
+
+.skills_area {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.skills_set_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 80px;
+    height: 300px;
+    width: 65%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.skills_set {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skills_item {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.skills_category {
+    width: 100px;
+}
+
+.skills_name {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* projects */
+
+.projects_area {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    border: 1px solid black;
+}
+
+.projects_slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.project-card {
+    min-width: 260px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* footer */
+
+.footer_area {
+    width: 100%;
+    height: 80px;
+}
