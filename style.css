@@ -82,7 +82,7 @@ section {
     display: flex;
     align-items: center;
     height: 550px;
-    background-image: url("./image/IMG_0438.jpeg");
+    background-image: url("./image/IMG_0438.webp");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -197,7 +197,6 @@ section {
     display: flex; /* ✅ 수평 배치 */
     align-items: flex-start; /* 세로 정렬 기준 상단으로 */
     align-items: center;
-    /* margin-bottom: 30px; */
 }
 
 .skills_category {
@@ -272,7 +271,7 @@ section {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgb(206, 225, 240);
-    color: white;
+    color: rgb(77, 77, 77);
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
@@ -282,7 +281,7 @@ section {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgb(206, 225, 240);
-    color: white;
+    color: rgb(77, 77, 77);
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
